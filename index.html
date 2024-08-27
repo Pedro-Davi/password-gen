@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Password generator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="images/lock.svg" alt="Image lock" id="pass-image">
+        <h1 class="title">Gerar Senha</h1>
+
+        <div class="password-container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-solid fa-copy"></i>
+            </button>
+            
+        </div>
+
+        <div class="password-items">
+            <div class="item">
+                <input type="number" name="size" id="size">
+                <label for="size">
+                    Quantidade de caracteres
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="uppercase" id="uppercase">
+                <label for="uppercase">
+                    Incluir letra maiúscula
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="lowercase" id="lowercase">
+                <label for="lowercase">
+                    Incluir letra minúscula
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="number" id="number">
+                <label for="number">
+                    Incluir número
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="special-caracter" id="special-caracter">
+                <label for="special-caracter">
+                    Incluir caractere especial
+                </label>
+            </div>
+
+
+            <button id="btn-generator">Gerar senha</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
